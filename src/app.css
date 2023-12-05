@@ -8,6 +8,41 @@
     width: 100px;
 }
 
+.shimmer-container{
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.shimmer-logo{
+    width: 100%;   
+    height: 140px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px rgb(227, 227, 227);
+}
+
+.shimmer-card{
+    padding: 2px;
+    width: 200px;
+    margin: 5px;
+    margin-bottom: 120px;
+    height: 250px;
+    /* background-color: rgb(247, 247, 247); */
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+@keyframes example {
+    from {background-color: rgb(255, 255, 255);}
+    to {background-color: rgb(231, 231, 231);}
+  }
+
+  @keyframes example {
+    0%   {background-color: rgb(255, 255, 255);}
+    25%  {background-color: rgb(231, 231, 231);}
+    50%  {background-color: rgb(255, 255, 255);}
+    100% {background-color: rgb(231, 231, 231);}
+  }
 .resCard{
     padding: 2px;
     width: 200px;
@@ -38,10 +73,10 @@
 }
 
 .res-logo{
-    width: 100%;
-    height: 40%;
-    border-radius: 15px;
-    box-shadow: 5px 5px 2px rgb(227, 227, 227);
+        width: 100%;
+        height: 140px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 2px rgb(227, 227, 227);
 }
 
 .nav-items > ul{
@@ -57,6 +92,9 @@
 
 .search{
     padding: 10px;
+}
+.sub-header{
+    display: flex;
 }
 
 .res-container{
