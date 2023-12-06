@@ -1,6 +1,6 @@
 const Shimmer =()=>{
     return (
-        <duv className="shimmer-container">
+        <div className="shimmer-container">
             <div className="shimmer-card">
                 <div className="shimmer-logo"></div>
             </div>
@@ -48,13 +48,29 @@ const Shimmer =()=>{
             <div className="shimmer-card">
                 <div className="shimmer-logo"></div>
             </div><div className="shimmer-card">
+                <div className="shimmer-logo"></div>
+            </div>
+            <div className="shimmer-card">
+                <div className="shimmer-logo"></div>
+            </div>
+            <div className="shimmer-card">
+                <div className="shimmer-logo"></div>
+            </div>
+            <div className="shimmer-card">
+                <div className="shimmer-logo"></div>
+            </div>
+            <div className="shimmer-card">
+                <div className="shimmer-logo"></div>
+            </div>
+            <div className="shimmer-card">
                 <div className="shimmer-logo"></div>
             </div>
             <div className="shimmer-card">
                 <div className="shimmer-logo"></div>
             </div>
             
-        </duv>
+            
+        </div>
     )
 }
 
