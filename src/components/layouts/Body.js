@@ -2,6 +2,7 @@ import RestaurantCard from "../RestaurantCard";
 import { RESTRO_DATA } from "../../utils/constants";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = ()=>{
 
@@ -20,9 +21,11 @@ const Body = ()=>{
             const restroData = jsonData?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
             // console.log(jsonData?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
             // console.log(jsonData?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restruants)
-            setRestroData(RESTRO_DATA) ;
-            setFilteredData(RESTRO_DATA)
-            // setRestroData(restroData) ;
+            // setRestroData(RESTRO_DATA) ;
+            // setFilteredData(RESTRO_DATA)
+            setFilteredData(restroData)
+            setRestroData(restroData) ;
+            console.log(restroData)
         } catch (error) {
             console.log(error)
         }
@@ -60,7 +63,7 @@ const Body = ()=>{
 
                 {
                     filteredData.map((data)=>(
-                        <RestaurantCard key={data.info.id} data={data}/>
+                        <Link to={"/restruant/"+data.info.id} key={data.info.id}><RestaurantCard  data={data}/></Link>
                     ))
                 }
             </div>

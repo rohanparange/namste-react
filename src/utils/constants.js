@@ -2,6 +2,7 @@ export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_l
 
 export const LOGO_URL ="https://logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png";
 
+export const RestroDataLink = "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.0177989&lng=72.84781199999999&restaurantId=";
 export const RESTRO_DATA =  [
     {
       "info": {
